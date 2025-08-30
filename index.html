@@ -57,7 +57,38 @@
 
 
 
-        
-    </main>
+        <section>
+<!-- Otras formas de ocultar un elemento -->
+            <h2>Ocultar elementos</h2>
+            <p>En continuación a <strong>display none</strong>, ahora se van a probar otras formas de ocultar los elementos que hay en la página web. </p>
+
+<!-- Visibility-->
+            <h3>Visibility</h3>
+            <p>Esta propiedad tiene 3 valores posibles <strong>visible</strong> (propiedad por defecto) <strong>hidden</strong> (oculta el elemento) y <strong>collapse</strong> (se usa en tablas).</p>
+            <article class="visibility">
+                <h4>Visibility hidden</h4>
+                <p>También hace que los elementos visualmente no se vean, la diferencia con none es que
+                estos si van a ocupar el espacio en el que están. </p>
+                <div class="hidden">Elemento 1 en un div. </div>
+                <div>Elemento 2 en otro div. </div>
+                <div class="hidden">Elemento 3 en otro div. </div>
+            </article>
+<hr>
+
+<!-- Opacity -->
+            <h3>Opacity</h3>
+            <p>Esta propiedad, dependiendo de los valores que se le den también sirve para ocultar elementos visualmente, esto mediante <strong>números entre el 0 y el 1</strong>
+                o con <strong>porcentajes 0% al 100%</strong>, actúa como un Font weight para elementos. </p>
+            <article class="opacity">
+                <div id="opacidad_1">Elemento 1 en un div con <strong>25%</strong> de opacidad. </div>
+                <div id="opacidad_2">Elemento 2 en otro div con <strong>0.5</strong> de opacidad. </div>
+                <div>Elemento 3 en otro div sin opacidad. </div>
+            </article>
+            <p>Entonces para desaparecer el elemento, con esta propiedad debe tener 0 ya sea en número o en porcentaje. </p>
+<!-- Fin ocultar elementos-->
+        </section>
+
+
+</main>
 </body>
 </html>
