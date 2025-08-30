@@ -142,3 +142,9 @@ div#opacidad_2{
     background-color: rgba(245, 204, 253, 0.377);
 }
 
+/* Max height */
+#max_min_height{
+    min-height: 5rem;
+    max-height: 7rem;
+    background-color: rgba(245, 240, 255, 0.753);
+}
