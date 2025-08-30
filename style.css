@@ -129,3 +129,16 @@ div#opacidad_2{
     max-width: 80rem;
     background-color: rgba(240, 248, 255, 0.705);
 }
+
+/* Min width */
+#min_width{
+    min-width: 50rem;
+    max-width: 80rem;
+    background-color: rgba(248, 255, 240, 0.712);
+}
+
+.height{
+    height: 3rem;
+    background-color: rgba(245, 204, 253, 0.377);
+}
+
