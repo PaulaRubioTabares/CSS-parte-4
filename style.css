@@ -208,3 +208,14 @@ section:nth-child(even){
     background-color: rgba(199, 210, 255, 0.795);
 }
 
+/* Sticky */
+.sticky{
+    left: 15rem;
+    top: 2rem;
+    bottom: 2rem;
+    position: sticky;
+    background-color: rgba(247, 199, 255, 0.795);
+}
+
+
+
