@@ -219,3 +219,21 @@ section:nth-child(even){
 
 
 
+/* Float */
+.propiedad_float{
+    background-color: rgb(221, 227, 244);
+    padding: 1rem;
+}
+.propiedad_float_span{
+    color: red;
+}
+
+/* Float none */
+.float_none{
+    float: none;
+    width: 10rem;
+    height: 10rem;
+    padding: 0 1rem;
+}
+
+
