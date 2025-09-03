@@ -196,3 +196,15 @@ section:nth-child(even){
     background-color: rgba(199, 240, 255, 0.795);
 }
 
+/* Absolute */
+.article_relative{
+    position: relative;
+    background-color: rgb(209, 212, 218);
+}
+.absolute{
+    top: 1.5rem;
+    left: 40rem;
+    position: absolute;
+    background-color: rgba(199, 210, 255, 0.795);
+}
+

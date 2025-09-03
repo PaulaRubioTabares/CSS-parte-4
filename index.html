@@ -184,6 +184,19 @@
             <p>Con este valor el elemento va a quedar <strong>fijo visualmente en la ventana, así el contenido se desplace. </strong></p>
 <hr>
 
+<!-- Absolute -->
+            <h3>Absolute</h3>
+            <p>Este valor hace que elemento se posicione relativo al elemento padre más cercano que tenga <strong>también una propiedad de position que no sea static</strong>,
+                <strong>si no</strong> existe tal elemento, <strong>se posicionará respecto a body</strong></p>
+            <article class="article_relative">
+                <div class="position"><p>Div sin position relative</p></div>
+                <div class="position absolute"><p>Div con position relative</p></div>
+                <div class="position"><p>Div sin position relative</p></div>
+            </article>
+            <p>Para que elemento no se posicione respecto a body, los 3 div se colocan <strong>dentro de un article con position relative</strong> y con color de fondo gris,
+                más a este article no se le dan valores de desplazamiento. </p>
+<hr>
+
 
         </section>
 
