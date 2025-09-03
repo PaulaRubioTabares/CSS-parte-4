@@ -61,11 +61,11 @@
             <h2>Ocultar elementos</h2>
             <p>En continuación a <strong>display none,</strong> ahora se van a probar otras formas de ocultar los elementos que hay en la página web. </p>
 
-<!-- Visibility-->
+    <!-- Visibility-->
             <h3>Visibility</h3>
             <p>Esta propiedad tiene 3 valores posibles <strong>visible</strong> (propiedad por defecto) <strong>hidden</strong> (oculta el elemento) y <strong>collapse</strong> (se usa en tablas).</p>
 
-<!-- Hidden  -->
+    <!-- Hidden  -->
             <h4>Visibility hidden</h4>
             <p>También hace que los elementos visualmente no se vean, la diferencia con none es que estos si van a ocupar el espacio en el que están. </p>
             <article class="visibility">
@@ -75,7 +75,7 @@
             </article>
 <hr>
 
-<!-- Opacity -->
+    <!-- Opacity -->
             <h3>Opacity</h3>
             <p>Esta propiedad, dependiendo de los valores que se le den también sirve para ocultar elementos visualmente, esto mediante <strong>números entre el 0 y el 1</strong>
                 o con <strong>porcentajes 0% al 100%</strong>, actúa como un Font weight para elementos. </p>
@@ -100,7 +100,7 @@
                 el tamaño de ese elemento va a cambiar desde o hasta el valor indicado. </p>
 
             <p>Estas medidas sirven para colocar límites a los elementos, también para que se ajusten mejor a los tamaños de las ventanas de los dispositivos. </p>
-<!-- Max width-->
+    <!-- Max width-->
             <h3>Max width</h3>
             <p>La primera propiedad de este apartado que se va a ver es <strong>max width</strong> que asigna un ancho máximo que va a tener un elemento. </p>
                 <div class="width">Elemento 1 en un div con propiedad de <strong>Width: 80rem. </strong></div>
@@ -108,7 +108,7 @@
             <p>Comparando estas dos propiedades si se reduce la ventana del navegador, se ve como el elemento con solo la propiedad de <strong>width</strong> sobresale incluso de la sección de este tema y crea una barra de scroll,
             en cambio, si se añade la propiedad de <strong>Max-width</strong>, no permite que elemento sobresalga de esa sección. </p>
 
-<!-- Min width-->
+    <!-- Min width-->
             <h3>Min width</h3>
             <p>La siguiente propiedad a añadir es <strong>min width</strong> que asigna un ancho mínimo a un elemento, en este caso, si la ventana del navegador es más pequeña que
                 ese elemento, se va a crear una barra de scroll para visualizarlo. </p>
@@ -116,7 +116,7 @@
                 <div class="min_width">Elemento 2 en un div con propiedad de <strong>Max-width: 80rem y min-width: 50rem. </strong></div>
                 <hr>
 
-<!-- Max height y Min height -->
+    <!-- Max height y Min height -->
             <h3>Max height y Min height</h3>
             <p>Max height define un alto máximo a los elementos. </p>
             <p>Min height asigna un alto mínimo a los elementos. </p>
@@ -126,6 +126,44 @@
                 puede salirse de su contenedor y sobreponerse a los elementos que estén debajo. </p>
             <p>Aunque estas últimas dos propiedades en la práctica casi no son usadas. </p>
 <!-- Fin max-min -->
+        </section>
+
+
+
+
+<!-- Posición de los elementos -->
+        <section>
+            <h2>Position</h2>
+            <p>En esta sección se aborda el tema de position, esta propiedad determina, según el valor dado la posición que va a tener el elemento en la página web <br>
+            Esta propiedad tiene los siguientes valores:</p>
+            <ul>
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Fixed</li>
+                <li>Absolute</li>
+                <li>Sticky</li>
+            </ul>
+            <p>Para indicar en donde va a quedar el elemento se usan las propiedades de:</p>
+            <ul>
+                <li>left</li>
+                <li>Right</li>
+                <li>Top</li>
+                <li>Bottom</li>
+            </ul>
+            <p>Y el valor que se le asigne a estas propiedades, será la distancia que se va a mover el objeto según el tipo de posición que tenga. </p>
+            <p><strong>Para ver cómo se comportan los elementos con cada valor en position se crean 3 div y se aplicara efecto siempre al div de la mitad. </strong></p>
+<hr>
+
+<!-- static -->
+            <h3>Static</h3>
+            <p>Esta es la propiedad por defecto de todos los elementos, es decir si "se aplica" esta propiedad el elemento <strong>no va a tener un desplazamiento va ava quedar fijo. </strong></p>
+                <div class="position">Div sin static</div>
+                <div class="position static">Div con static</div>
+                <div class="position">Div sin static</div>
+            <p>Para este ejemplo el div de la mitad tiene las propiedades de <strong>position: static;</strong>
+                <strong>left: 3rem;</strong> right: 0rem; <strong>top: 2.3rem;</strong> bottom: 0rem; donde se le dice que debe desplazarse, pero al tener la posición en static, el elemento no se mueve. </p>
+<hr>
+
         </section>
 
 
