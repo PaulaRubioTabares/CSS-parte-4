@@ -260,4 +260,11 @@ section:nth-child(even){
     padding: 0 1rem;
 }
 
+/* Float inline end */
+.float_inline_end{
+    float: inline-start;
+    width: 10rem;
+    height: 10rem;
+    padding: 0 1rem;
+}
 
