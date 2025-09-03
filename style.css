@@ -252,3 +252,12 @@ section:nth-child(even){
     padding: 0 1rem;
 }
 
+/* Float inline start */
+.float_inline_start{
+    float: inline-end;
+    width: 10rem;
+    height: 10rem;
+    padding: 0 1rem;
+}
+
+
