@@ -24,7 +24,7 @@
 <!-- Cuerpo del documento -->
     <main>
 
-        <section class="display">
+        <section>
 <!-- Display -->
             <h2>Display</h2>
             <p>Ya en la página 3 de css se vieron 3 propiedades de display: block, inline e inline block. </p>
@@ -33,10 +33,10 @@
             <h3>Display inline block</h3>
             <p>Retomando ese tema, se coloca otro ejemplo del uso de inline block con tres elementos div, recordando que esta
                 etiqueta tiene por defecto display block. </p>
-            <article class="inline-block">
-                <div>Elemento 1 en un div. </div>
-                <div>Elemento 2 en otro div. </div>
-                <div>Elemento 3 en otro div. </div>
+            <article class="display">
+                <div class="inline-block">Elemento 1 en un div. </div>
+                <div class="inline-block">Elemento 2 en otro div. </div>
+                <div class="inline-block">Elemento 3 en otro div. </div>
             </article>
 <hr>
 
@@ -44,7 +44,7 @@
             <h3>Display none</h3>
             <p>Esta propiedad sirve para ocultar elementos visualmente, más aún existen en la página, después de este párrafo
                 <strong>hay otras tres etiquetas div</strong>, con las mismas características de los anteriores, pero la primera y
-                la tercera al aplicarles la propiedad de <strong>display none, no se ven</strong> ni van a ocupar espacio visualmente. </p>
+                la tercera al aplicarles la propiedad de <strong> display none, no se ven</strong> ni van a ocupar espacio visualmente. </p>
             <article class="display_none">
                 <div class="none">Elemento 1 en un div. </div>
                 <div>Elemento 2 en otro div. </div>
@@ -56,19 +56,19 @@
 
 
 
-
         <section>
 <!-- Otras formas de ocultar un elemento -->
             <h2>Ocultar elementos</h2>
-            <p>En continuación a <strong>display none</strong>, ahora se van a probar otras formas de ocultar los elementos que hay en la página web. </p>
+            <p>En continuación a <strong>display none,</strong> ahora se van a probar otras formas de ocultar los elementos que hay en la página web. </p>
 
 <!-- Visibility-->
             <h3>Visibility</h3>
             <p>Esta propiedad tiene 3 valores posibles <strong>visible</strong> (propiedad por defecto) <strong>hidden</strong> (oculta el elemento) y <strong>collapse</strong> (se usa en tablas).</p>
+
+<!-- Hidden  -->
+            <h4>Visibility hidden</h4>
+            <p>También hace que los elementos visualmente no se vean, la diferencia con none es que estos si van a ocupar el espacio en el que están. </p>
             <article class="visibility">
-                <h4>Visibility hidden</h4>
-                <p>También hace que los elementos visualmente no se vean, la diferencia con none es que
-                estos si van a ocupar el espacio en el que están. </p>
                 <div class="hidden">Elemento 1 en un div. </div>
                 <div>Elemento 2 en otro div. </div>
                 <div class="hidden">Elemento 3 en otro div. </div>
@@ -79,19 +79,19 @@
             <h3>Opacity</h3>
             <p>Esta propiedad, dependiendo de los valores que se le den también sirve para ocultar elementos visualmente, esto mediante <strong>números entre el 0 y el 1</strong>
                 o con <strong>porcentajes 0% al 100%</strong>, actúa como un Font weight para elementos. </p>
-            <article class="opacity">
-                <div id="opacidad_1">Elemento 1 en un div con <strong>25%</strong> de opacidad. </div>
-                <div id="opacidad_2">Elemento 2 en otro div con <strong>0.5</strong> de opacidad. </div>
-                <div>Elemento 3 en otro div sin opacidad. </div>
-            </article>
+
+                <div class="opacidad_1">Elemento 1 en un div con <strong>25%</strong> de opacidad. </div>
+                <div class="opacidad_2">Elemento 2 en otro div con <strong>0.5</strong> de opacidad. </div>
+                <div class="opacidad">Elemento 3 en otro div sin opacidad. </div>
+
             <p>Entonces para desaparecer el elemento, con esta propiedad debe tener 0 ya sea en número o en porcentaje. </p>
 <!-- Fin ocultar elementos-->
         </section>
 
 
 
-        <section class="max_min">
 <!-- Dar tamaño a los elementos -->
+        <section>
             <h2>Tamaño a los elementos</h2>
             <p>Para dar un tamaño a los elementos ya habíamos visto la <strong>propiedad de width</strong>, y este lo que hace es que <strong>no importa el tamaño de la ventana</strong> de visualización
                 de la página, siempre tendrá ese tamaño. </p>
@@ -102,32 +102,34 @@
             <p>Estas medidas sirven para colocar límites a los elementos, también para que se ajusten mejor a los tamaños de las ventanas de los dispositivos. </p>
 <!-- Max width-->
             <h3>Max width</h3>
-            <p>La primera propiedad de este apartado que se va a ver es <strong>max width</strong> que asigna un ancho máximo que va a tener un elemento. <</p>
-            <div class="width">Elemento 1 en un div con propiedad de <strong>Width: 80rem. </strong></div>
-            <div id="max_width">Elemento 2 en un div con propiedad de <strong>Max-width: 80rem. </strong></div>
+            <p>La primera propiedad de este apartado que se va a ver es <strong>max width</strong> que asigna un ancho máximo que va a tener un elemento. </p>
+                <div class="width">Elemento 1 en un div con propiedad de <strong>Width: 80rem. </strong></div>
+                <div class="max_width">Elemento 2 en un div con propiedad de <strong>Max-width: 80rem. </strong></div>
             <p>Comparando estas dos propiedades si se reduce la ventana del navegador, se ve como el elemento con solo la propiedad de <strong>width</strong> sobresale incluso de la sección de este tema y crea una barra de scroll,
-            en cambio, si se añade la propiedad de <strong>Max-width</strong>, no permite que elemento sobresalga de esa sección.</p>
+            en cambio, si se añade la propiedad de <strong>Max-width</strong>, no permite que elemento sobresalga de esa sección. </p>
 
 <!-- Min width-->
             <h3>Min width</h3>
             <p>La siguiente propiedad a añadir es <strong>min width</strong> que asigna un ancho mínimo a un elemento, en este caso, si la ventana del navegador es más pequeña que
                 ese elemento, se va a crear una barra de scroll para visualizarlo. </p>
-            <div class="width">Elemento 1 en un div con propiedad de <strong>Width: 80rem. </strong></div>
-            <div id="min_width">Elemento 2 en un div con propiedad de <strong>Max-width: 80rem y min-width: 50rem.</strong></div>
-            <p></p>
-<hr>
+                <div class="width">Elemento 1 en un div con propiedad de <strong>Width: 80rem. </strong></div>
+                <div class="min_width">Elemento 2 en un div con propiedad de <strong>Max-width: 80rem y min-width: 50rem. </strong></div>
+                <hr>
 
 <!-- Max height y Min height -->
             <h3>Max height y Min height</h3>
             <p>Max height define un alto máximo a los elementos. </p>
             <p>Min height asigna un alto mínimo a los elementos. </p>
-            <div class="height">Elemento 1 en un div con propiedad de <strong>Height: 3rem. </strong></div>
-            <div id="max_min_height">Elemento 2 en un div con propiedad de <strong>Max-height: 7rem y min-height: 5rem. </strong></div>
+                <div class="height">Elemento 1 en un div con propiedad de <strong>Height: 3rem. </strong></div>
+                <div class="max_min_height">Elemento 2 en un div con propiedad de <strong>Max-height: 7rem y min-height: 5rem. </strong></div>
             <p>En ambos casos, si la pantalla se reduce, y el contenido del elemento quede más grande que el alto especificado, este
                 puede salirse de su contenedor y sobreponerse a los elementos que estén debajo. </p>
             <p>Aunque estas últimas dos propiedades en la práctica casi no son usadas. </p>
 <!-- Fin max-min -->
         </section>
+
+
+
 
     </main>
 </body>
