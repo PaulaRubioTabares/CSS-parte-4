@@ -24,7 +24,7 @@
 <!-- Cuerpo del documento -->
     <main>
 
-        <section class="display">
+        <section>
 <!-- Display -->
             <h2>Display</h2>
             <p>Ya en la página 3 de css se vieron 3 propiedades de display: block, inline e inline block. </p>
@@ -33,10 +33,10 @@
             <h3>Display inline block</h3>
             <p>Retomando ese tema, se coloca otro ejemplo del uso de inline block con tres elementos div, recordando que esta
                 etiqueta tiene por defecto display block. </p>
-            <article class="inline-block">
-                <div>Elemento 1 en un div. </div>
-                <div>Elemento 2 en otro div. </div>
-                <div>Elemento 3 en otro div. </div>
+            <article class="display">
+                <div class="inline-block">Elemento 1 en un div. </div>
+                <div class="inline-block">Elemento 2 en otro div. </div>
+                <div class="inline-block">Elemento 3 en otro div. </div>
             </article>
 <hr>
 
@@ -44,7 +44,7 @@
             <h3>Display none</h3>
             <p>Esta propiedad sirve para ocultar elementos visualmente, más aún existen en la página, después de este párrafo
                 <strong>hay otras tres etiquetas div</strong>, con las mismas características de los anteriores, pero la primera y
-                la tercera al aplicarles la propiedad de <strong>display none, no se ven</strong> ni van a ocupar espacio visualmente. </p>
+                la tercera al aplicarles la propiedad de <strong> display none, no se ven</strong> ni van a ocupar espacio visualmente. </p>
             <article class="display_none">
                 <div class="none">Elemento 1 en un div. </div>
                 <div>Elemento 2 en otro div. </div>
@@ -56,42 +56,42 @@
 
 
 
-
         <section>
 <!-- Otras formas de ocultar un elemento -->
             <h2>Ocultar elementos</h2>
-            <p>En continuación a <strong>display none</strong>, ahora se van a probar otras formas de ocultar los elementos que hay en la página web. </p>
+            <p>En continuación a <strong>display none,</strong> ahora se van a probar otras formas de ocultar los elementos que hay en la página web. </p>
 
-<!-- Visibility-->
+    <!-- Visibility-->
             <h3>Visibility</h3>
             <p>Esta propiedad tiene 3 valores posibles <strong>visible</strong> (propiedad por defecto) <strong>hidden</strong> (oculta el elemento) y <strong>collapse</strong> (se usa en tablas).</p>
+
+    <!-- Hidden  -->
+            <h4>Visibility hidden</h4>
+            <p>También hace que los elementos visualmente no se vean, la diferencia con none es que estos si van a ocupar el espacio en el que están. </p>
             <article class="visibility">
-                <h4>Visibility hidden</h4>
-                <p>También hace que los elementos visualmente no se vean, la diferencia con none es que
-                estos si van a ocupar el espacio en el que están. </p>
                 <div class="hidden">Elemento 1 en un div. </div>
                 <div>Elemento 2 en otro div. </div>
                 <div class="hidden">Elemento 3 en otro div. </div>
             </article>
 <hr>
 
-<!-- Opacity -->
+    <!-- Opacity -->
             <h3>Opacity</h3>
             <p>Esta propiedad, dependiendo de los valores que se le den también sirve para ocultar elementos visualmente, esto mediante <strong>números entre el 0 y el 1</strong>
                 o con <strong>porcentajes 0% al 100%</strong>, actúa como un Font weight para elementos. </p>
-            <article class="opacity">
-                <div id="opacidad_1">Elemento 1 en un div con <strong>25%</strong> de opacidad. </div>
-                <div id="opacidad_2">Elemento 2 en otro div con <strong>0.5</strong> de opacidad. </div>
-                <div>Elemento 3 en otro div sin opacidad. </div>
-            </article>
+
+                <div class="opacidad_1">Elemento 1 en un div con <strong>25%</strong> de opacidad. </div>
+                <div class="opacidad_2">Elemento 2 en otro div con <strong>0.5</strong> de opacidad. </div>
+                <div class="opacidad">Elemento 3 en otro div sin opacidad. </div>
+
             <p>Entonces para desaparecer el elemento, con esta propiedad debe tener 0 ya sea en número o en porcentaje. </p>
 <!-- Fin ocultar elementos-->
         </section>
 
 
 
-        <section class="max_min">
 <!-- Dar tamaño a los elementos -->
+        <section>
             <h2>Tamaño a los elementos</h2>
             <p>Para dar un tamaño a los elementos ya habíamos visto la <strong>propiedad de width</strong>, y este lo que hace es que <strong>no importa el tamaño de la ventana</strong> de visualización
                 de la página, siempre tendrá ese tamaño. </p>
@@ -100,34 +100,119 @@
                 el tamaño de ese elemento va a cambiar desde o hasta el valor indicado. </p>
 
             <p>Estas medidas sirven para colocar límites a los elementos, también para que se ajusten mejor a los tamaños de las ventanas de los dispositivos. </p>
-<!-- Max width-->
+    <!-- Max width-->
             <h3>Max width</h3>
-            <p>La primera propiedad de este apartado que se va a ver es <strong>max width</strong> que asigna un ancho máximo que va a tener un elemento. <</p>
-            <div class="width">Elemento 1 en un div con propiedad de <strong>Width: 80rem. </strong></div>
-            <div id="max_width">Elemento 2 en un div con propiedad de <strong>Max-width: 80rem. </strong></div>
+            <p>La primera propiedad de este apartado que se va a ver es <strong>max width</strong> que asigna un ancho máximo que va a tener un elemento. </p>
+                <div class="width">Elemento 1 en un div con propiedad de <strong>Width: 80rem. </strong></div>
+                <div class="max_width">Elemento 2 en un div con propiedad de <strong>Max-width: 80rem. </strong></div>
             <p>Comparando estas dos propiedades si se reduce la ventana del navegador, se ve como el elemento con solo la propiedad de <strong>width</strong> sobresale incluso de la sección de este tema y crea una barra de scroll,
-            en cambio, si se añade la propiedad de <strong>Max-width</strong>, no permite que elemento sobresalga de esa sección.</p>
+            en cambio, si se añade la propiedad de <strong>Max-width</strong>, no permite que elemento sobresalga de esa sección. </p>
 
-<!-- Min width-->
+    <!-- Min width-->
             <h3>Min width</h3>
             <p>La siguiente propiedad a añadir es <strong>min width</strong> que asigna un ancho mínimo a un elemento, en este caso, si la ventana del navegador es más pequeña que
                 ese elemento, se va a crear una barra de scroll para visualizarlo. </p>
-            <div class="width">Elemento 1 en un div con propiedad de <strong>Width: 80rem. </strong></div>
-            <div id="min_width">Elemento 2 en un div con propiedad de <strong>Max-width: 80rem y min-width: 50rem.</strong></div>
-            <p></p>
-<hr>
+                <div class="width">Elemento 1 en un div con propiedad de <strong>Width: 80rem. </strong></div>
+                <div class="min_width">Elemento 2 en un div con propiedad de <strong>Max-width: 80rem y min-width: 50rem. </strong></div>
+                <hr>
 
-<!-- Max height y Min height -->
+    <!-- Max height y Min height -->
             <h3>Max height y Min height</h3>
             <p>Max height define un alto máximo a los elementos. </p>
             <p>Min height asigna un alto mínimo a los elementos. </p>
-            <div class="height">Elemento 1 en un div con propiedad de <strong>Height: 3rem. </strong></div>
-            <div id="max_min_height">Elemento 2 en un div con propiedad de <strong>Max-height: 7rem y min-height: 5rem. </strong></div>
+                <div class="height">Elemento 1 en un div con propiedad de <strong>Height: 3rem. </strong></div>
+                <div class="max_min_height">Elemento 2 en un div con propiedad de <strong>Max-height: 7rem y min-height: 5rem. </strong></div>
             <p>En ambos casos, si la pantalla se reduce, y el contenido del elemento quede más grande que el alto especificado, este
                 puede salirse de su contenedor y sobreponerse a los elementos que estén debajo. </p>
             <p>Aunque estas últimas dos propiedades en la práctica casi no son usadas. </p>
 <!-- Fin max-min -->
         </section>
+
+
+
+
+<!-- Posición de los elementos -->
+        <section>
+            <h2>Position</h2>
+            <p>En esta sección se aborda el tema de position, esta propiedad determina, según el valor dado la posición que va a tener el elemento en la página web <br>
+            Esta propiedad tiene los siguientes valores:</p>
+            <ul>
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Fixed</li>
+                <li>Absolute</li>
+                <li>Sticky</li>
+            </ul>
+            <p>Para indicar en donde va a quedar el elemento se usan las propiedades de:</p>
+            <ul>
+                <li>left</li>
+                <li>Right</li>
+                <li>Top</li>
+                <li>Bottom</li>
+            </ul>
+            <p>Y el valor que se le asigne a estas propiedades, será la distancia que se va a mover el objeto según el tipo de posición que tenga. </p>
+            <p><strong>Para ver cómo se comportan los elementos con cada valor en position se crean 3 div y se aplicara efecto siempre al div de la mitad. </strong></p>
+<hr>
+
+<!-- static -->
+            <h3>Static</h3>
+            <p>Esta es la propiedad por defecto de todos los elementos, es decir si "se aplica" esta propiedad el elemento <strong>no va a tener un desplazamiento va ava quedar fijo. </strong></p>
+                <div class="position">Div sin static</div>
+                <div class="position static">Div con static</div>
+                <div class="position">Div sin static</div>
+            <p>Para este ejemplo el div de la mitad tiene las propiedades de <strong>position: static;</strong>
+                <strong>left: 3rem;</strong> right: 0rem; <strong>top: 2.3rem;</strong> bottom: 0rem; donde se le dice que debe desplazarse, pero al tener la posición en static, el elemento no se mueve. </p>
+<hr>
+
+<!-- Relative -->
+            <h3>Relative</h3>
+            <p>La propiedad relative permite que el elemento se coloque en una posición <strong>relativa a su punto de origen</strong> dependiendo los valores de desplazamiento que se le den</p>
+                <div class="position">Div sin position relative</div>
+                <div class="position relative">Div con position relative</div>
+                <div class="position">Div sin position relative</div>
+            <p>A este div se le <strong>colocan los mismos valores</strong> de desplazamiento <strong>que al anterior</strong>, solo que su posición ahora es relative: <strong>position: relative;</strong>
+            <strong>left: 3rem;</strong> right: 0rem; <strong>top: 2.3rem;</strong> bottom: 0rem; creando un espacio de 3rem en la izquierda y 2.3rem la parte superior del elemento</p>
+<hr>
+
+<!-- Fixed -->
+            <h3>Fixed</h3>
+            <p>Otro valor que puede tomar la propiedad de position es fixed, esta va a hacer que el elemento cambie su posición, y se coloque, según el desplazamiento dado,
+                <strong>con respecto a la visualización de la página web</strong></p>
+                <div class="position">Div sin position fixed </div>
+                <div class="position fixed">Div con position fixed</div>
+                <div class="position">Div sin position fixed</div>
+            <p>Con este valor el elemento va a quedar <strong>fijo visualmente en la ventana, así el contenido se desplace. </strong></p>
+<hr>
+
+<!-- Absolute -->
+            <h3>Absolute</h3>
+            <p>Este valor hace que elemento se posicione relativo al elemento padre más cercano que tenga <strong>también una propiedad de position que no sea static</strong>,
+                <strong>si no</strong> existe tal elemento, <strong>se posicionará respecto a body</strong></p>
+            <article class="article_relative">
+                <div class="position"><p>Div sin position relative</p></div>
+                <div class="position absolute"><p>Div con position relative</p></div>
+                <div class="position"><p>Div sin position relative</p></div>
+            </article>
+            <p>Para que elemento no se posicione respecto a body, los 3 div se colocan <strong>dentro de un article con position relative</strong> y con color de fondo gris,
+                más a este article no se le dan valores de desplazamiento. </p>
+<hr>
+
+<!-- Sticky -->
+            <article>
+                <h3>Sticky</h3>
+                <p>El último valor de esta propiedad es sticky, la cual es una combinación entre relative y fixed, el objeto <strong>se ubica respecto a su posición original
+                    pero cuando el contenido de la página se mueve, este también lo hará. </strong></p>
+                    <div class="position">Div sin position sticky</div>
+                    <div class="position sticky">Div con position sticky</div>
+                    <div class="position">Div sin position sticky</div>
+                <p>Aunque este tiene un <strong>límite de desplazamiento, se moverá solo dentro de su elemento padre más cercano</strong></p>
+                <p>Para mostrar este efecto, toda <strong>la sección sobre sticky se encierra en un article</strong></p>
+            </article>
+<!-- Fin position -->
+        </section>
+
+
+
 
     </main>
 </body>
