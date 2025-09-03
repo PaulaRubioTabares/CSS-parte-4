@@ -186,3 +186,13 @@ section:nth-child(even){
     background-color: rgba(255, 234, 199, 0.795);
 }
 
+/* Fixed */
+.fixed{
+    left: 0;
+    bottom: 40%;
+    margin: 0;
+    width: 8rem;
+    position: fixed;
+    background-color: rgba(199, 240, 255, 0.795);
+}
+
