@@ -385,3 +385,11 @@ section:nth-child(even){
     cursor: pointer;
 }
 
+
+
+
+/* Transition */
+.transition_propiedades{
+    color: red;
+}
+
