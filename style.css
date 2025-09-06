@@ -411,4 +411,22 @@ section:nth-child(even){
     color: #0011ff;
 }
 
+/* Transition delay */
+.transition_delay{
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 2s;
+    width: 30%;
+    padding: 2%;
+    background-color: #eaffd5;
+}
+.transition_delay:hover{
+    width: 35%;
+    padding: 2.5%;
+    background-color: #fff0d5;;
+    border-radius: 20px;
+    color: #0011ff;
+}
+
+/* propiedad duración función delay */
 
