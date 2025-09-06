@@ -371,5 +371,17 @@ section:nth-child(even){
     background-color: #d2ccd6;
 }
 
+/* Botones con css */
+.botón, .borrar, .subir{
+    margin: 2rem;
+    padding: 2rem;
+    border: 3px outset #00ffff;
+    border-radius: 100%;
+    background-color: #fdc8d5;
+}
 
+.botón:hover, .borrar:hover, .subir:hover{
+    background-color: #e2cdff;
+    cursor: pointer;
+}
 
