@@ -326,3 +326,24 @@ section:nth-child(even){
     background-color: #ececec;
 }
 
+/* Focus en formularios */
+.fondo_formulario_focus{
+    background-color: #f4ffffdc;
+}
+.formulario_focus input[type=text]{
+    width: 70%;
+    height: 2.3rem;
+    margin: 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #0051ff;
+    color: #ff81c0;
+    background-color: #f7eafd83;
+}
+.formulario_focus input[type=text]:focus{
+    background-color: #eab8ffce;
+    color: #000;
+    border: 2px solid #0011ff;
+}
+
+
