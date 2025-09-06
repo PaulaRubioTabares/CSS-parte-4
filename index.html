@@ -322,6 +322,59 @@
         </section>
 
 
+
+
+        <section>
+<!-- Formularios con Css -->
+            <h2>Formularios</h2>
+            <p>Para mejorar la apariencia de los formularios se pueden usar las propiedades del box model, como colocar un margin y padding</p>
+<hr>
+    <!-- Box model -->
+            <h3>Box model en formularios</h3>
+            <p>Un formulario en html sin CSS se ve:</p>
+        <!-- Ejemplo sin uso del box model -->
+            <form action="">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"  placeholder="Nombre" autocomplete required/>
+                <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text"  id="apellido" name="apellido"  placeholder="Apellido" autocomplete required/>
+                </fieldset>
+            </form>
+
+        <!-- Ejemplo usando el box model -->
+            <p>Y mejorando <strong>los inputs</strong> con el box model puede quedar así:</p>
+            <form action="" class="formulario_box_model">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"  placeholder="Nombre" autocomplete required/>
+                <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text"  id="apellido" name="apellido"  placeholder="Apellido" autocomplete required/>
+                </fieldset>
+            </form>
+            <p>Aplicando los estilos de: </p>
+            <p class="propiedades_formulario"><strong>
+                Width: 90% <br>
+                Height: 2.5rem <br>
+                Margin: 1rem <br>
+                Font-size: 1rem <br>
+                Border-radius: 12px <br>
+                Border: 2px solid #723333 <br>
+                Color: #6f79ff <br>
+                Background-color: #ececec; </strong>
+            </p>
+<hr>
+
+        </section>
+
+
+
+
+
     </main>
 </body>
 

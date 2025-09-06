@@ -304,3 +304,25 @@ section:nth-child(even){
 }
 
 
+
+
+/* Formularios con css */
+.propiedades_formulario{
+    margin: 0 5rem;
+}
+
+/* Box model */
+.formulario_box_model{
+    font-size: 1.2rem;
+}
+.formulario_box_model input[type=text]{
+    width: 90%;
+    height: 2.5rem;
+    margin: 1rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 2px solid #723333;
+    color: #6f79ff;
+    background-color: #ececec;
+}
+
