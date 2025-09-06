@@ -221,7 +221,7 @@ section:nth-child(even){
 
 /* Float */
 .propiedad_float{
-    background-color: rgb(221, 227, 244);
+    background-color: rgba(214, 220, 235, 0.418);
     padding: 1rem;
 }
 .propiedad_float_span{
@@ -267,4 +267,40 @@ section:nth-child(even){
     height: 10rem;
     padding: 0 1rem;
 }
+
+
+
+
+/* Centrar un elemento */
+.centrar{
+    background-color: rgba(231, 253, 223, 0.822);
+    width: 80%;
+    height: 5rem;
+    margin: 1rem 0;
+}
+
+/* Centrando el texto */
+.texto{
+    text-align: center;
+}
+
+/* Centrando todo el elemento */
+.elemento{
+    margin: 1rem auto;
+}
+
+/* Ambas propiedades */
+.ambos{
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.vertical{
+    width: 80%;
+    margin: 1rem auto;
+    padding: 5rem 0;
+    text-align: center;
+    background-color: rgb(221, 233, 250);
+}
+
 
