@@ -385,3 +385,48 @@ section:nth-child(even){
     cursor: pointer;
 }
 
+
+
+
+/* Transition */
+.transition_propiedades{
+    color: red;
+}
+
+/* Transition property y duration */
+.transition_property{
+    width: 15%;
+    padding: 2%;
+    background-color: #c2ffff;
+    border: 1px solid black;;
+    transition-property: all;
+    transition-duration: 3s;
+}
+.transition_property:hover{
+    width: 20%;
+    padding: 3%;
+    background-color: #ffd5e5;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: #0011ff;
+}
+
+/* Transition delay */
+.transition_delay{
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 2s;
+    width: 30%;
+    padding: 2%;
+    background-color: #eaffd5;
+}
+.transition_delay:hover{
+    width: 35%;
+    padding: 2.5%;
+    background-color: #fff0d5;;
+    border-radius: 20px;
+    color: #0011ff;
+}
+
+/* propiedad duración función delay */
+
