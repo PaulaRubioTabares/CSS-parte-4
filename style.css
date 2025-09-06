@@ -393,3 +393,22 @@ section:nth-child(even){
     color: red;
 }
 
+/* Transition property y duration */
+.transition_property{
+    width: 15%;
+    padding: 2%;
+    background-color: #c2ffff;
+    border: 1px solid black;;
+    transition-property: all;
+    transition-duration: 3s;
+}
+.transition_property:hover{
+    width: 20%;
+    padding: 3%;
+    background-color: #ffd5e5;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: #0011ff;
+}
+
+
