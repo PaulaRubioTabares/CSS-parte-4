@@ -322,6 +322,142 @@
         </section>
 
 
+
+
+        <section>
+<!-- Formularios con Css -->
+            <h2>Formularios</h2>
+            <p>Para mejorar la apariencia de los formularios se pueden usar las propiedades del box model, como colocar un margin y padding</p>
+<hr>
+    <!-- Box model -->
+            <h3>Box model en formularios</h3>
+            <p>Un formulario en html sin CSS se ve:</p>
+        <!-- Ejemplo sin uso del box model -->
+            <form action="">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"  placeholder="Nombre" autocomplete required/>
+                <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text"  id="apellido" name="apellido"  placeholder="Apellido" autocomplete required/>
+                </fieldset>
+            </form>
+
+        <!-- Ejemplo usando el box model -->
+            <p>Y mejorando <strong>los inputs</strong> con el box model puede quedar así:</p>
+            <form action="" class="formulario_box_model">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"  placeholder="Nombre" autocomplete required/>
+                <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text"  id="apellido" name="apellido"  placeholder="Apellido" autocomplete required/>
+                </fieldset>
+            </form>
+            <p>Aplicando los estilos de: </p>
+            <p class="propiedades_formulario"><strong>
+                Width: 90% <br>
+                Height: 2.5rem <br>
+                Margin: 1rem <br>
+                Font-size: 1rem <br>
+                Border-radius: 12px <br>
+                Border: 2px solid #723333 <br>
+                Color: #6f79ff <br>
+                Background-color: #ececec; </strong>
+            </p>
+<hr>
+    <!-- Focus en los formularios -->
+            <h3>Foco en los formularios</h3>
+            <p>Con esta propiedad lo que se logra es que el estilo del input cambie cuando <strong>se seleccione el input</strong>:</p>
+            <form action="" class="formulario_focus">
+                <fieldset class="fondo_formulario_focus">
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"  placeholder="Nombre" autocomplete required/>
+                <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text"  id="apellido" name="apellido"  placeholder="Apellido" autocomplete required/>
+                </fieldset>
+            </form>
+<hr>
+    <!-- Caja de texto -->
+            <h3>Cuadro de texto</h3>
+            <p>Cuando se coloca un cuadro de texto o <strong>textarea</strong> este puede modificar sus dimensiones, ya sea por la cantidad de texto ingresado, o manualmente por el usuario,
+            así se le asignen dimensiones mediante rows y cols</p>
+            <form class="_textarea">
+                <fieldset>
+                    <legend>Textarea</legend>
+                    <label for="cuadro_texto">Cuadro de texto:</label> <br>
+                    <textarea name="cuadro_texto" id="cuadro_texto"></textarea>
+                </fieldset>
+            </form>
+            <p>Pero si se añade la propiedad de <strong>resize: none</strong> tendrá un tamaño fijo sin que el usuario lo pueda modificar</p>
+            <form class="formulario_resize">
+                <fieldset>
+                    <legend>Textarea</legend>
+                    <label for="cuadro_texto">Cuadro de texto:</label> <br>
+                    <textarea name="cuadro_texto" id="cuadro_texto"></textarea>
+                </fieldset>
+            </form>
+            <p>Aplicando los estilos de: </p>
+            <p class="propiedades_formulario"><strong>
+                Margin: 2rem <br>
+                Font-size: 1.5rem <br>
+                Border-radius: 7px <br>
+                Border: 2px solid #9d52ff <br>
+                Background-color: #f1e3fd <br>
+                Resize: none <br>
+            </strong>
+            </p>
+<hr>
+
+    <!-- Listas de selección con css -->
+            <h3>Listas de selección con css</h3>
+            <p>Usando las propiedades antes vistas, también se puede cambiar el estilo de las listas de los formularios</p>
+            <p>Una lista de los formularios sin css se ve:</p>
+            <form action="">
+                <select name="desplegable" id="">
+                    <option value="Opción">Opción 1</option>
+                    <option value="Opción">Opción 2</option>
+                    <option value="Opción">Opción 3</option>
+                    <option value="Opción">Opción 4</option>
+                </select>
+            </form>
+            <p>Aplicando css puede quedar:</p>
+            <form action="">
+                <select class="lista" name="lista" id="">
+                    <option value="Opción">Opción 1</option>
+                    <option value="Opción">Opción 2</option>
+                    <option value="Opción">Opción 3</option>
+                    <option value="Opción">Opción 4</option>
+                </select>
+            </form>
+<hr>
+
+    <!-- Botones con css -->
+            <h3>Botones con css</h3>
+            <p>El último apartado que voy a tomar de los formularios para aplicar css serán los botones</p>
+            <p>Un botón en html se puede ver:</p>
+            <form action="">
+                <button type="button">Botón</button>
+                <button type="reset">Borrar</button>
+                <button type="submit">Subir</button>
+            </form>
+            <p>Aplicando css pueden quedar:</p>
+            <form action="" >
+                <button class="botón " type="button">Botón</button>
+                <button class="borrar" type="reset">Borrar</button>
+                <button class="subir" type="submit">Subir</button>
+            </form>
+<!-- Fin formularios -->
+        </section>
+
+
+
+
+
     </main>
 </body>
 

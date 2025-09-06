@@ -304,3 +304,84 @@ section:nth-child(even){
 }
 
 
+
+
+/* Formularios con css */
+.propiedades_formulario{
+    margin: 0 5rem;
+}
+
+/* Box model */
+.formulario_box_model{
+    font-size: 1.2rem;
+}
+.formulario_box_model input[type=text]{
+    width: 90%;
+    height: 2.5rem;
+    margin: 1rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 2px solid #723333;
+    color: #6f79ff;
+    background-color: #ececec;
+}
+
+/* Focus en formularios */
+.fondo_formulario_focus{
+    background-color: #f4ffffdc;
+}
+.formulario_focus input[type=text]{
+    width: 70%;
+    height: 2.3rem;
+    margin: 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #0051ff;
+    color: #ff81c0;
+    background-color: #f7eafd83;
+}
+.formulario_focus input[type=text]:focus{
+    background-color: #eab8ffce;
+    color: #000;
+    border: 2px solid #0011ff;
+}
+
+/* Cuadro de texto */
+._textarea textarea, .formulario_resize textarea{
+    width: 60%;
+    height: 10rem;
+}
+.formulario_resize textarea{
+    margin: 2rem;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    border: 2px solid #9d52ff;
+    background-color: #f1e3fd;
+    resize: none;
+}
+
+/* Lista con css */
+.lista{
+    width: 50%;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border: 2px outset #c978ff;
+    border-radius: 5px;
+    background-color: #d2ccd6;
+}
+
+/* Botones con css */
+.botón, .borrar, .subir{
+    margin: 2rem;
+    padding: 2rem;
+    border: 3px outset #00ffff;
+    border-radius: 100%;
+    background-color: #fdc8d5;
+}
+
+.botón:hover, .borrar:hover, .subir:hover{
+    background-color: #e2cdff;
+    cursor: pointer;
+}
+
