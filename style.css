@@ -581,3 +581,13 @@ section:nth-child(even){
 .skew_dos:hover{
     transform: skew(-20deg, -10deg);
 }
+
+/* Transform 2d */
+.transform:hover{
+    transform: translateX(30px) scale(1.2) rotate(15deg) skew(5deg);
+}
+.transform_dos:hover{
+    transform: rotate(-15deg) skew(-5deg) translateX(-30px) scale(0.7);
+}
+
+
