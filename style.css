@@ -442,5 +442,48 @@ section:nth-child(even){
 }
 
 
-/* propiedad duración función delay */
+
+/* Timing function */
+.timing_function{
+    padding: 1rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #cbe4e4;
+}
+
+.function{
+    width: 40%;
+    padding: 2rem 2rem;
+    background-color: #6dd9ddc4;
+    color: #0011ff;
+    transition-property: all;
+    transition-duration: 2s;
+}
+/* Propiedades a cambiar */
+.timing_function:hover .function{
+    width: 60%;
+    padding: 2rem 2rem;
+    color: #000000;
+    background-color: #e0c9ff;
+    transition-duration: all;
+    transition-duration: 2s;
+}
+.linear{
+    transition-timing-function: linear;
+}
+.ease{
+    transition-timing-function: ease;
+}
+.ease_in{
+    transition-timing-function: ease-in;
+}
+.ease_out{
+    transition-timing-function: ease-out;
+}
+.ease_in_out{
+    transition-timing-function: ease-in-out;
+}
+.cubic_bezier{
+    transition-timing-function: cubic-bezier(0.2,1,1,2);
+}
+
 
