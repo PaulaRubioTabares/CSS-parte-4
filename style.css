@@ -442,7 +442,6 @@ section:nth-child(even){
 }
 
 
-
 /* Timing function */
 .timing_function{
     padding: 1rem 1rem;
@@ -485,5 +484,29 @@ section:nth-child(even){
 .cubic_bezier{
     transition-timing-function: cubic-bezier(0.2,1,1,2);
 }
+
+
+/*Transition: propiedad duración función delay */
+.transition_span{
+    margin: 0 5rem;
+    color: #d58b00;
+}
+.transition{
+    width: 25%;
+    padding: 2rem 1rem;
+    background-color: #ffbebe;
+    color: #ff00a2;
+    border: 10px dotted #4ba80dbb;
+    transition: all 3s ease-out;
+}
+/* Propiedades a cambiar */
+.transition:hover{
+    width: 50%;
+    padding: 2rem 1rem;
+    background-color: #c0ffe2c4;
+    color: #23a7b8;
+    border: 10px solid #aa84c2;
+}
+
 
 
