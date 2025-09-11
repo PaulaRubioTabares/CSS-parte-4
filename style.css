@@ -14,7 +14,7 @@ h1{
 main{
     font-size: 1.5rem;
     margin: 0;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(190, 183, 183);
 }
 h2 {
     text-align: center;
@@ -387,46 +387,126 @@ section:nth-child(even){
 
 
 
-
 /* Transition */
-.transition_propiedades{
-    color: red;
+.transition_{
+    width: 20rem;
+    padding: 3rem;
+    background-color: #fabfd6;
+    color: #0011ff;
+    border-radius: 15px;
+    transition: all;
+}
+
+/* Transition property*/
+.property:hover{
+    width: 30rem;
+    padding: 3rem;
+    background-color: #f1ffd5;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: #ff00ea;
+    transition: all;
 }
 
 /* Transition property y duration */
-.transition_property{
-    width: 15%;
-    padding: 2%;
-    background-color: #c2ffff;
-    border: 1px solid black;;
-    transition-property: all;
+.duration{
     transition-duration: 3s;
 }
-.transition_property:hover{
-    width: 20%;
-    padding: 3%;
-    background-color: #ffd5e5;
+.duration:hover{
+    width: 30rem;
+    padding: 3rem;
+    background-color: #ff609dbf;
     border: 2px solid black;
     border-radius: 15px;
     color: #0011ff;
+    transition: all;
+    transition-duration: 3s;
 }
 
 /* Transition delay */
-.transition_delay{
-    transition-property: all;
+.delay{
+    transition: all;
     transition-duration: 3s;
     transition-delay: 2s;
-    width: 30%;
-    padding: 2%;
-    background-color: #eaffd5;
+
 }
-.transition_delay:hover{
-    width: 35%;
-    padding: 2.5%;
+.delay:hover{
+    width: 35rem;
+    padding: 2.5rem;
     background-color: #fff0d5;;
     border-radius: 20px;
     color: #0011ff;
+    transition: all;
+    transition-duration: 3s;
+    transition-delay: 2s;
 }
 
-/* propiedad duración función delay */
+
+/* Timing function */
+.timing_function{
+    padding: 1rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #cbe4e4;
+}
+
+.function{
+    width: 40%;
+    padding: 2rem 2rem;
+    background-color: #6dd9ddc4;
+    color: #0011ff;
+    transition-property: all;
+    transition-duration: 2s;
+}
+/* Propiedades a cambiar */
+.timing_function:hover .function{
+    width: 60%;
+    padding: 2rem 2rem;
+    color: #000000;
+    background-color: #e0c9ff;
+    transition-duration: all;
+    transition-duration: 2s;
+}
+.linear{
+    transition-timing-function: linear;
+}
+.ease{
+    transition-timing-function: ease;
+}
+.ease_in{
+    transition-timing-function: ease-in;
+}
+.ease_out{
+    transition-timing-function: ease-out;
+}
+.ease_in_out{
+    transition-timing-function: ease-in-out;
+}
+.cubic_bezier{
+    transition-timing-function: cubic-bezier(0.2,1,1,2);
+}
+
+
+/*Transition: propiedad duración función delay */
+.transition_span{
+    margin: 0 5rem;
+    color: #d58b00;
+}
+.transition{
+    width: 25%;
+    padding: 2rem 1rem;
+    background-color: #ffbebe;
+    color: #ff00a2;
+    border: 10px dotted #4ba80dbb;
+    transition: all 3s ease-out;
+}
+/* Propiedades a cambiar */
+.transition:hover{
+    width: 50%;
+    padding: 2rem 1rem;
+    background-color: #c0ffe2c4;
+    color: #23a7b8;
+    border: 10px solid #aa84c2;
+}
+
+
 

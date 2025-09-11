@@ -457,10 +457,12 @@
 
 
 
-<!-- Transition -->
+
         <section>
+<!-- Transition -->
             <h2>Transition</h2>
-            <p>Con esta propiedad se logra que los elementos que tienen más de un estado, como por ejemplo un hover que cambia el color de fondo, ese <strong>efecto tengan un cambio menos brusco. </strong></p>
+            <p>Con esta propiedad se logra que los elementos que tienen más de un estado, como por ejemplo un hover que cambia el color de fondo, ese <strong>efecto tengan un cambio menos brusco. </strong>,
+                esta propiedad se usa <strong>junto a hover</strong>, para que el efecto se aplique cuando el mouse se coloque encima</p>
 
     <!-- Transition property -->
             <h3>Transition property</h3>
@@ -469,15 +471,18 @@
                 <strong>Transition property:</strong> width, padding, background-color <br></p>
             <p>O se pueden declarar que todas las propiedades que cambian tengan transición: <br>
                 <strong>Transition property:</strong> all</p>
+            <p class="transition_ property">Caja a cambiar. </p>
+            <p>Y en transition se tienen los valores de: <span class="transition_propiedades"> transition-property: all; </span> width: 20rem; padding: 3rem; background-color;
+                border: 2px solid black; border-radius: 15px; color; pero <strong>el cambio es muy brusco. </strong></p>
 <hr>
 
     <!-- Transition duration -->
             <h3>Transition duration</h3>
             <p>Va a ser el tiempo en que se realiza el cambio de estado. </p>
             <p><strong>Ya con estas dos propiedades se puede lograr el efecto de una transición más suave. </strong></p>
-            <p class="transition_property">Caja a cambiar. </p>
+            <p class="transition_ duration">Caja a cambiar. </p>
             <p>En este caso se cambian los atributos de: <strong> width, padding, background-color, border, border-radius, color </strong>
-                cuando el mouse se coloca encima del elemento con la propiedad <strong>hover</strong></p>
+                cuando el mouse se coloca encima del elemento con la propiedad <strong>hover. </strong></p>
             <p>Y las propiedades en las transiciones son: <span class="transition_propiedades">transition-property: all; transition-duration: 3s;</span>
                 donde se selecciona a cambiar todas las propiedades y que ese cambio sea en 3 segundos. </p>
 <hr>
@@ -485,14 +490,53 @@
     <!-- Transition delay -->
             <h3>Transition delay</h3>
             <p>Como su nombre indica, coloca un delay o retraso en los cambios de atributos. </p>
-            <p class="transition_delay">Caja a cambiar. </p>
+            <p class="transition_ delay">Caja a cambiar. </p>
             <p>En este caso se cambian las propiedades de: <strong>width, padding, background-color, border-radius, color. </strong></p>
             <p>Y en transition se tienen los valores de: <span class="transition_propiedades">transition-property: all; transition-duration: 3s; transition-delay: 2s;</span>
-                en este caso el cambio del elemento cuando el mouse se coloca encima tarda 2 segundos en suceder, y lo mismo sucede cuando se retira el mouse .</p>
+                en este caso el cambio del elemento cuando el mouse se coloca encima tarda 2 segundos en suceder, y lo mismo sucede cuando se retira el mouse. </p>
+<hr>
 
+    <!-- Timing function  -->
+            <h3>Timing function</h3>
+            <p>Es la curva que va a tener la velocidad de cambio de las propiedades del elemento</p>
 
+            <section class="timing_function">
+                <h4>Linear</h4>
+                <p>Con esta propiedad, curva de la velocidad será constante. </p>
+                <p class="function linear">Linear. </p>
 
+                <h4>Ease</h4>
+                <p>Con esta propiedad, la animación comienza lenta, acelera en el centro y termina lenta. </p>
+                <p class="function ease">Ease.</p>
 
+                <h4>Ease in</h4>
+                <p>La animación inicia lento y finaliza rápido. </p>
+                <p class="function ease_in">Ease in. </p>
+
+                <h4>Ease out</h4>
+                <p>Al contrario de ease in, la animación inicia rápido y finaliza lento. </p>
+                <p class="function ease_out">Ease out.</p>
+
+                <h4>Ease in out</h4>
+                <p>Tanto al inicio como al fina la animación es lenta, en el centro es rápido. </p>
+                <p class="function ease_in_out">Ease in out.</p>
+
+                <h4>Cubic bezier.</h4>
+                <p>Permite definir manualmente cual será la curva de velocidad. </p>
+                <p class="function cubic_bezier">Cubic bezier. </p>
+            </section>
+<hr>
+
+    <!-- Transition -->
+            <section>
+                <h3>Transition</h3>
+                <p>Y como muchas otras propiedades de css todas las propiedades de transition vistas antes se pueden colocar en una sola línea, en donde el orden de los valores es: <br>
+                    <span class="transition_span">Transition: propiedad-a-cambiar duración timing-function delay</span></p>
+                <p class="transition">Caja a cambiar. </p>
+                <p>Y en transition se tienen los valores de: <span class="transition_propiedades"><strong> transition: all 3s ease-out;</strong></span></p>
+            </section>
+
+<!-- Fin transition -->
         </section>
 
 
