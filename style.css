@@ -510,3 +510,84 @@ section:nth-child(even){
 
 
 
+
+/* Transform 2d*/
+.Transform_2d{
+    background-color: #d1ffd1b2;
+    padding: 1rem;
+}
+.Transform_title{
+    text-align: center;
+}
+.Transform_subtitle{
+    color: red;
+    font-size: larger;
+    font-style: italic;
+}
+.bloque{
+    width: 10rem;
+    padding: 3rem;
+    margin: 0 auto;
+    color: #1c808d;
+    text-align: center;
+    border-radius: 17px;
+    background-color: #ffd1d1c4;
+    transition: transform 2s ease;
+}
+
+/* Translate */
+.translate_x:hover{
+    transform: translateX(25%);
+}
+.translate_y:hover{
+    transform: translateY(25%);
+}
+.translate:hover{
+    transform: translate(25%, 25%);
+}
+.translate_dos:hover{
+    transform: translate(-25%, -25%);
+}
+
+/* Scale */
+.scale_x:hover{
+    transform: scaleX(2);
+}
+.scale_y:hover{
+    transform: scaleY(2);
+}
+.scale:hover{
+    transform: scale(0.9, 0.6);
+}
+
+/* Rotate */
+.rotate:hover{
+    transform: rotate(45deg);
+}
+.rotate_dos:hover{
+    transform: rotate(-45deg);
+}
+
+/* Skew */
+.skew_x:hover{
+    transform: skewX(20deg);
+}
+.skew_y:hover{
+    transform: skewY(10deg);
+}
+.skew:hover{
+    transform: skew(20deg, 10deg);
+}
+.skew_dos:hover{
+    transform: skew(-20deg, -10deg);
+}
+
+/* Transform 2d */
+.transform:hover{
+    transform: translateX(30px) scale(1.2) rotate(15deg) skew(5deg);
+}
+.transform_dos:hover{
+    transform: rotate(-15deg) skew(-5deg) translateX(-30px) scale(0.7);
+}
+
+

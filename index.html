@@ -540,6 +540,114 @@
         </section>
 
 
+
+
+        <section>
+<!-- Transform -->
+            <h2>Transform</h2>
+            <p>La propiedad de transform permite ajustar las coordenadas de donde se coloca el elemento ya sea en <strong>2d (x, y) o 3d (x, y, z)</strong>, en esta práctica se usa <strong>junto a hover y transition</strong>, para que el cambio suceda cuando el mouse se
+                coloque encima del elemento, y el cambio de estado, no sea muy brusco
+            </p>
+
+    <!-- Transform 2d -->
+            <article class="Transform_2d">
+                <h3 class="Transform_title">Transform 2d</h3>
+<hr>
+        <!-- Translate -->
+                <h4 class="Transform_subtitle">Translate</h4>
+                <p>El primer valor de transform que permite mover el elemento en 2 dimensiones es translate</p>
+                <article>
+                    <h4>Translate x</h4>
+                    <p class="bloque translate_x">Translate x</p>
+                    <p>Se desplaza el elemento el el eje x u horizontal</p>
+
+                    <h4>Translate y</h4>
+                    <p class="bloque translate_y">Translate y</p>
+                    <p>Se desplaza el elemento el el eje y o vertical</p>
+
+                    <h4>Translate</h4>
+                    <p class="bloque translate">Translate</p>
+                    <p>Su estructura es transform: translate(x, y);</p>
+
+                    <h4>Translate negativo</h4>
+                    <p class="bloque translate_dos">Translate</p>
+                    <p>Su estructura es transform: translate(x, y);</p>
+                </article>
+<hr>
+
+        <!-- Scale -->
+                <h4 class="Transform_subtitle">Scale</h4>
+                <p>Modifica la escala o el tamaño del objeto ya sea para agrandar o disminuir, e igual que con translate se puede modificar el elemento individualmente en su eje x o y, o en ambos al mismo tiempo</p>
+                <article>
+                    <h4>Scale x</h4>
+                    <p class="bloque scale_x">Scale x</p>
+                    <p>Su estructura es: transform: scaleX(2);</p>
+
+                    <h4>Scale y</h4>
+                    <p class="bloque scale_y">Scale y</p>
+                    <p>Su estructura es: transform: scaleY(2);</p>
+
+                    <h4>Scale</h4>
+                    <p class="bloque scale">Scale</p>
+                    <p>Su estructura es: transform: scale(0.9, 0.6)</p>
+                </article>
+
+<hr>
+
+        <!-- Rotate -->
+                <h4 class="Transform_subtitle">Rotate</h4>
+                <p>Con este valor se puede rotar el elemento tanto a la derecha como a la izquierda mediante la unidad de deg o grados en el sentido de las manecillas del reloj</p>
+
+                <h4>Rotate positivo</h4>
+                <p class="bloque rotate">Rotate</p>
+                <p>Su estructura es transform: rotate(45deg);</p>
+
+                <h4>Rotate negativo</h4>
+                <p>Para que la rotación sea de manera contraria se coloca un número negativo</p>
+                <p class="bloque rotate_dos">Rotate</p>
+                <p>Su estructura es transform: rotate(-45deg);</p>
+<hr>
+
+        <!-- Skew -->
+                <h4 class="Transform_subtitle">Skew</h4>
+                <p>Hace que el elemento se incline ya sea hacia la derecha o izquierda, y también se especifica en grados</p>
+
+                <h4>Skew X</h4>
+                <p class="bloque skew_x">Skew</p>
+                <p>Su estructura es transform: skewX(20deg);</p>
+
+                <h4>Skew Y</h4>
+                <p class="bloque skew_y">Skew</p>
+                <p>Su estructura es transform: skewY(10deg);</p>
+
+                <h4>Skew</h4>
+                <p class="bloque skew">Skew</p>
+                <p>Su estructura es transform: skew(20deg, 10deg);</p>
+
+                <h4>Skew negativo</h4>
+                <p class="bloque skew_dos">Skew</p>
+                <p>Su estructura es transform: skew(-20deg, -10deg);</p>
+<hr>
+
+        <!-- Transform -->
+                <h4 class="Transform_subtitle">Transform</h4>
+                <p>Ahora, todas estas propiedades de transform se pueden colocar en una sola linea clocando las propiedades a modificar, por ejemplo:
+                    transform: translate() scale() rotate() skew();</p>
+
+                <h4>Transform</h4>
+                <p class="bloque transform">Transform</p>
+                <p>Su estructura quedo: transform: translateX(-30px) scale(0.7) rotate(-15deg) skew(-5deg);</p>
+
+                <h4>Transform negativo</h4>
+                <p class="bloque transform_dos">Transform</p>
+                <p>Su estructura quedo: transform: rotate(-15deg) skew(-5deg) translateX(-30px) scale(0.7);</p>
+            </article>
+<hr>
+
+
+        </section>
+
+
     </main>
 </body>
 
