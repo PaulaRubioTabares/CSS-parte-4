@@ -568,3 +568,16 @@ section:nth-child(even){
     transform: rotate(-45deg);
 }
 
+/* Skew */
+.skew_x:hover{
+    transform: skewX(20deg);
+}
+.skew_y:hover{
+    transform: skewY(10deg);
+}
+.skew:hover{
+    transform: skew(20deg, 10deg);
+}
+.skew_dos:hover{
+    transform: skew(-20deg, -10deg);
+}
