@@ -695,6 +695,125 @@
 
 
 
+<!-- Box Shadow -->
+        <section class="sombra">
+            <h2>Box Shadow</h2>
+            <p>Una propiedad que no he colocado en esta serie de páginas de practicas de css es la de box shadow, que como su nombre
+                lo indica, coloca una sombra en la caja según la forma dada en el box model, contando con los siguientes valores.</p>
+<hr>
+        <!-- Desplazamiento de la sombra -->
+            <h3>Offset x</h3>
+                <p>Este valor es el <strong>Primer</strong> valor que se declara en box shadow y representa el desplazamiento que tendrá
+                    la sombra en el eje x respecto al bloque original.</p>
+
+            <h3>Offset Y</h3>
+                <p>Este valor es el <strong>Segundo</strong> valor que se declara en box shadow y representa el desplazamiento que tendrá
+                    la sombra en el eje y.</p>
+                    <p class="caja offset">Caja Con Sombra</p>
+                <p>Ya con <strong>estos dos valores</strong> se puede crear una "segunda caja" la cual será la sombra, en este caso la caja tiene la siguiente propiedad:
+                <strong>box-shadow: 8px 8px;</strong> donde tiene un desplazamiento de 8 pixeles tanto en x como en y, copiando las propiedades del box model del elemento.</p>
+                <p><strong>También se pueden dar valores negativos</strong></p>
+                    <p class="caja offset-">Caja Con Sombra</p>
+                <p class="ejemplo-sombra">Quedando en este caso con: <strong>box-shadow: -8px -8px;</strong></p>
+<hr>
+        <!-- Difuminado de la sombra -->
+            <h3>Blur Radius</h3>
+                <p>Este es el <strong>Tercer</strong> valor que recibe la propiedad de box shadow, con este valor lo que se asigna es el <strong>desenfoque</strong> que va a tener esa sombra</p>
+                    <p class="caja blur">Caja Con Sombra</p>
+                <p class="ejemplo-sombra">En este caso con los valores de: box-shadow: 15px 15px <strong>10px;</strong></p>
+<hr>
+        <!-- Expansión de la sombra -->
+            <h3>Spread Radius</h3>
+                <p>Este valor lo que hace es definir que tanto se va a expandir la sombra cuando el valor e positivo o
+                    cuanto se va a contraer la sombra si el valor es negativo</p>
+                    <p class="caja spread-p">Caja Con Sombra</p>
+                <p>En este caso con los valores de: box-shadow: 0 50px 10px <strong>15px;</strong></p>
+                    <p class="caja spread-n">Caja Con Sombra</p>
+                <p class="ejemplo-sombra">En este caso con los valores de: box-shadow: 0 50px 10px <strong>-15px;</strong></p>
+
+<hr>
+        <!-- Color de la sombra -->
+            <h3>Color</h3>
+                <p>En los casos anteriores se ha visto que el <strong>color por defecto</strong> de la sombra <strong>se colocó en negro</strong>,
+                    esto porque es el color por defecto de la letra del elemento, si se cambia el color de la letra, también lo hará la sombra del elemento.</p>
+                <p>En este ejemplo <strong>se cambia el color de la letra</strong>, por ende el color de la sombra.</p>
+                    <p class="caja color-letra">Caja Con Sombra</p>
+                <p class="ejemplo-sombra">Quedando con las propiedades de: <strong>color: purple; box-shadow: 15px 15px 10px;</strong></p>
+
+                <p>Si se quiere que la letra del elemento y la sombra sean de diferente color, se puede colocar el color en la propiedad de box shadow </p>
+                    <p class="caja color-sombra">Caja Con Sombra</p>
+                <p class="ejemplo-sombra">Quedando con las propiedades de: <strong>color: tomato; box-shadow: 15px 15px 10px yellowgreen;</strong></p>
+<hr>
+        <!-- Sombra dentro del elemento -->
+            <h3>Inset</h3>
+                <p>Esta propiedad determina si la sobra se coloca por <strong>dentro</strong> de la caja o por <strong>fuera</strong> de la caja. <br>
+                    Este efecto se logra colocando que <strong>la sombra no tenga desplazamiento</strong></p>
+                    <p class="caja inset">Caja Con Sombra</p>
+                    <p class="ejemplo-sombra">Quedando: box-shadow: inset 0 0 30px 0;</p>
+                <p>En este segundo ejemplo la sombra tiene un <strong>desplazamiento en x</strong></p>
+                    <p class="caja inset-dos">Caja Con Sombra</p>
+                    <p class="ejemplo-sombra">Quedando: box-shadow: inset 15px 0 30px 0;</p>
+                <p>En este ejemplo la sombra tiene un <strong>desplazamiento tanto en x como en y</strong></p>
+                    <p class="caja inset-tres">Caja Con Sombra</p>
+                    <p class="ejemplo-sombra">Quedando: box-shadow: inset 15px 15px 30px 0;</p>
+                <p>En este segundo ejemplo la sombra tiene un <strong>desplazamiento tanto en x como en y negativos</strong></p>
+                    <p class="caja inset-cuatro">Caja Con Sombra</p>
+                    <p class="ejemplo-sombra">Quedando: box-shadow: inset -15px -15px 30px 0;</p>
+<!-- Fin de Box Shadow -->
+        </section>
+
+
+
+<!-- z index -->
+        <section>
+            <h2>Z index</h2>
+            <p>Con z index se define si un elemento queda encima o debajo de otro elemento cuando los dos se sobreponen,
+                esto sobre todo cuando a los elementos se les da un valor de position. </p>
+<hr>
+        <!-- Position un solo elemento -->
+            <h3>Un solo elemento con position</h3>
+                <p>Si no hay un z-index declarado los elementos se sobreponen <strong>según el orden</strong> en que se declaran <strong>en el html,</strong> de arriba hacia abajo</p>
+                    <p class="caja-index index-uno">Caja 1</p>
+                    <p class="caja-index index-dos">Caja 2</p>
+                <p>En este caso la caja 1 tiene posición relativa y un desplazamiento de 45px y al estar la caja 1 en el <strong>html declarada primero que la caja 2</strong>
+                    se coloque por encima de la caja 2.</p>
+<hr>
+        <!-- Position varios elementos -->
+            <h3>Ambos elementos con position</h3>
+                <p>Si a ambas cajas se les declara una posición, en este caso ambas cajas tienen <strong>position: relative;</strong>
+                    así solo la primera tenga desplazamiento depende del <strong>orden de declaración en html,</strong> pero de abajo hacia arriba.</p>
+                    <p class="caja-index index-tres">Caja 1</p>
+                    <p class="caja-index index-cuatro">Caja 2</p>
+                <p>Y como en el html la caja 2 está después de la caja 1, se coloca encima</p>
+<hr>
+        <!-- Z Index 1 declarado  -->
+            <h3>Declarando z index</h3>
+                <p>Si por algún motivo se quiere que <strong>la caja 1 este encima de la caja 2</strong> y ambas tienen declarada la propiedad de position
+                    se debe declarar un z index</p>
+                    <p class="caja-index index-cinco">Caja 1</p>
+                    <p class="caja-index index-seis">Caja 2</p>
+                <p>En este caso la caja 1 tiene posición relativa, un desplazamiento de top: 55px; y declarado un <strong>z-index: 1;</strong> para que se sobreponga</p>
+                <p>La caja 2 tiene posición relativa, y un desplazamiento de left: 80px;</p>
+<hr>
+            <ul>
+                <li>Para declarar un z index se debe tener en cuenta que entre más grande el número, ese elemento será el primero en sobreponerse a los demás. </li>
+                <li>Se recomienda no utilizar números consecutivos, ya sea de 10 en 10 o incluso de 100 en 100</li>
+            </ul>
+<hr>
+        <!-- Z Index padre e hijo -->
+            <h3>Z index en contenedores</h3>
+                <p>Si hay un elemento padre y se quiere que esté por delate de su elemento hijo, <strong>el z index no funciona con el elemento padre</strong>, más se puede dar
+                    un valor negativo al hijo</p>
+                    <div class="padre">
+                        <p class="hijo caja-index">P dentro de div</p>
+                    </div>
+                <p>En este caso ambos elementos tienen la posición relativa y el hijo del contenedor tiene la propiedad de z-index: -1;</p>
+                <p class="cuidado"><strong>Cuidado, si al padre, por cualquier motivo, se le coloca la propiedad de z index, entonces el hijo ya no se puede colocar detrás del padre</strong></p>
+<!-- Fin z index -->
+
+            </section>
+
+
     </main>
 </body>
 
