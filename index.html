@@ -645,7 +645,54 @@
 <hr>
 
 
+
+<!-- Transform 3d -->
+            <article class="Transform_3d">
+                <h3 class="Transform_title">Transform 3d</h3>
+
+        <!-- Rotate 3d en x -->
+                <h4 class="Transform_subtitle">Rotate x</h4>
+                <p>Rotación en base al eje x</p>
+                <p class="bloque_3d rotate_x_3d">Rotate x</p>
+                <p>Su estructura queda: transform: rotateX(180deg);</p>
+
+        <!-- Rotate 3d en Y -->
+                <h4 class="Transform_subtitle">Rotate y</h4>
+                <p>Rotación en base al eje y</p>
+                <p class="bloque_3d rotate_y_3d">Rotate y</p>
+                <p>Su estructura es:transform: rotateY(180deg);</p>
+
+        <!-- Rotate 3d en Z -->
+                <h4 class="Transform_subtitle">Rotate z</h4>
+                <p>Rotación en base al eje z</p>
+                <p class="bloque_3d rotate_z_3d">Rotate z</p>
+                <p>La estructura quedo: transform: rotateZ(180deg);</p>
+
+        <!-- Punto de origen -->
+                <h4 class="Transform_subtitle">Rotate</h4>
+                <p>La propiedad de rotate hace que el elemento "rote" con punto de origen el centro del elemento dependiendo del eje o los ejes indicados</p>
+                <p>Ese punto de origen de la rotación se puede cambiar con la propiedad <strong>Transform-origin</strong> la cual recibe los valores de top, bottom, left, right y center,
+                    o definiendo el punto mediante pixeles o porcentaje</p>
+
+            <!-- Modificar origen con top, bottom, etc -->
+                <h4 class="Transform_subtitle">Rotate</h4>
+                <p>Rotación en base al eje y</p>
+                <p class="bloque_3d rotate_top">Rotate punto de origen desplazado</p>
+                <p>Quedando su estructura: transform-origin: top left; y en hover transform: rotateY(180deg)</p>
+
+            <!-- Modificar origen con valores numéricos -->
+                <h4 class="Transform_subtitle">Rotate</h4>
+                <p>Rotación en base al eje z</p>
+                <p class="bloque_3d rotate_bottom">Rotate punto de origen desplazado 2</p>
+                <p>Quedando su estructura: transform-origin:30% 30%; y en hover transform: rotateZ(180deg)</p>
+            </article>
+            <!--
+                        Transform → modifica forma, tamaño, posición.
+                        Transition → suaviza cambios entre estados.
+            -->
+<!-- Fin Transform -->
         </section>
+
 
 
     </main>
