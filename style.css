@@ -672,6 +672,20 @@ section:nth-child(even){
     box-shadow: -8px -8px;
 }
 
+/* Blur */
+.blur{
+    box-shadow: 15px 15px 10px;
+}
+
+/* Spread */
+.spread-p{
+    box-shadow: 0 50px 10px 15px;
+}
+.spread-n{
+    box-shadow: 0 50px 10px -15px;
+}
+
+
 
 
 
