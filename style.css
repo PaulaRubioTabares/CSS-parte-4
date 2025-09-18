@@ -627,6 +627,22 @@ section:nth-child(even){
     transform: rotateZ(180deg);
 }
 
+/* Cambiando punto de origen */
+.rotate_top{
+    transform-origin: top left;
+    margin: 2rem auto;
+}
+.rotate_top:hover{
+    transform: rotateY(180deg);
+}
+
+.rotate_bottom{
+    transform-origin:30% 30%;
+}
+.rotate_bottom:hover{
+    transform: rotateZ(180deg);
+}
+/* Fin Transform */
 
 
 
