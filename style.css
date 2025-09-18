@@ -591,3 +591,42 @@ section:nth-child(even){
 }
 
 
+
+/* Transform 3d*/
+.Transform_3d{
+    background-color: #e3fcff;
+    padding: 1rem;
+}
+.Trans{
+    text-align: center;
+}
+.Trans{
+    color: red;
+    font-size: larger;
+    font-style: italic;
+}
+.bloque_3d{
+    width: 10rem;
+    padding: 3rem;
+    margin: 0 auto;
+    color: #1e1c8d;
+    text-align: center;
+    border-radius: 17px;
+    background-color: #e1d1ffc4;
+    transition: transform 2s ease;
+}
+
+/* Rotate 3d */
+.rotate_x_3d:hover{
+    transform: rotateX(180deg);
+}
+.rotate_y_3d:hover{
+    transform: rotateY(180deg);
+}
+.rotate_z_3d:hover{
+    transform: rotateZ(180deg);
+}
+
+
+
+
