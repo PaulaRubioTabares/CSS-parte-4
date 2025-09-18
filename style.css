@@ -738,5 +738,14 @@ section:nth-child(even){
     position: relative;
 }
 
-
+/* z index declarado */
+.index-cinco{
+    position: relative;
+    top: 55px;
+    z-index: 1;
+}
+.index-seis{
+    position: relative;
+    left: 80px;
+}
 

@@ -701,6 +701,7 @@
             <p>Una propiedad que no he colocado en esta serie de páginas de practicas de css es la de box shadow, que como su nombre
                 lo indica, coloca una sombra en la caja según la forma dada en el box model, contando con los siguientes valores.</p>
 <hr>
+        <!-- Desplazamiento de la sombra -->
             <h3>Offset x</h3>
                 <p>Este valor es el <strong>Primer</strong> valor que se declara en box shadow y representa el desplazamiento que tendrá
                     la sombra en el eje x respecto al bloque original.</p>
@@ -715,11 +716,13 @@
                     <p class="caja offset-">Caja Con Sombra</p>
                 <p class="ejemplo-sombra">Quedando en este caso con: <strong>box-shadow: -8px -8px;</strong></p>
 <hr>
+        <!-- Difuminado de la sombra -->
             <h3>Blur Radius</h3>
                 <p>Este es el <strong>Tercer</strong> valor que recibe la propiedad de box shadow, con este valor lo que se asigna es el <strong>desenfoque</strong> que va a tener esa sombra</p>
                     <p class="caja blur">Caja Con Sombra</p>
                 <p class="ejemplo-sombra">En este caso con los valores de: box-shadow: 15px 15px <strong>10px;</strong></p>
 <hr>
+        <!-- Expansión de la sombra -->
             <h3>Spread Radius</h3>
                 <p>Este valor lo que hace es definir que tanto se va a expandir la sombra cuando el valor e positivo o
                     cuanto se va a contraer la sombra si el valor es negativo</p>
@@ -729,6 +732,7 @@
                 <p class="ejemplo-sombra">En este caso con los valores de: box-shadow: 0 50px 10px <strong>-15px;</strong></p>
 
 <hr>
+        <!-- Color de la sombra -->
             <h3>Color</h3>
                 <p>En los casos anteriores se ha visto que el <strong>color por defecto</strong> de la sombra <strong>se colocó en negro</strong>,
                     esto porque es el color por defecto de la letra del elemento, si se cambia el color de la letra, también lo hará la sombra del elemento.</p>
@@ -740,6 +744,7 @@
                     <p class="caja color-sombra">Caja Con Sombra</p>
                 <p class="ejemplo-sombra">Quedando con las propiedades de: <strong>color: tomato; box-shadow: 15px 15px 10px yellowgreen;</strong></p>
 <hr>
+        <!-- Sombra dentro del elemento -->
             <h3>Inset</h3>
                 <p>Esta propiedad determina si la sobra se coloca por <strong>dentro</strong> de la caja o por <strong>fuera</strong> de la caja. <br>
                     Este efecto se logra colocando que <strong>la sombra no tenga desplazamiento</strong></p>
@@ -778,6 +783,19 @@
                     <p class="caja-index index-tres">Caja 1</p>
                     <p class="caja-index index-cuatro">Caja 2</p>
                 <p>Y como en el html la caja 2 está después de la caja 1, se coloca encima</p>
+<hr>
+            <h3>Declarando z index</h3>
+                <p>Si por algún motivo se quiere que <strong>la caja 1 este encima de la caja 2</strong> y ambas tienen declarada la propiedad de position
+                    se debe declarar un z index</p>
+                    <p class="caja-index index-cinco">Caja 1</p>
+                    <p class="caja-index index-seis">Caja 2</p>
+                <p>En este caso la caja 1 tiene posición relativa, un desplazamiento de top: 55px; y declarado un <strong>z-index: 1;</strong> para que se sobreponga</p>
+                <p>La caja 2 tiene posición relativa, y un desplazamiento de left: 80px;</p>
+<hr>
+            <ul>
+                <li>Para declarar un z index se debe tener en cuenta que entre más grande el número, ese elemento será el primero en sobreponerse a los demás. </li>
+                <li>Se recomienda no utilizar números consecutivos, ya sea de 10 en 10 o incluso de 100 en 100</li>
+            </ul>
 <hr>
 
             </section>
