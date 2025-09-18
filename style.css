@@ -646,3 +646,32 @@ section:nth-child(even){
 
 
 
+
+/* Inicio Box shadow */
+.caja{
+    background-color: #a8ffff;
+    padding: 50px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.caja, .ejemplo-sombra{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.ejemplo-sombra{
+    width: 500px;
+}
+
+/* offset x - offset y*/
+.offset{
+    box-shadow: 8px 8px;
+}
+.offset-{
+    box-shadow: -8px -8px;
+}
+
+
+
+
