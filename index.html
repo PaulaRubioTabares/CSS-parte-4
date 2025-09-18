@@ -759,6 +759,28 @@
 
 
 
+<!-- z index -->
+        <section>
+            <h2>Z index</h2>
+            <p>Con z index se define si un elemento queda encima o debajo de otro elemento cuando los dos se sobreponen,
+                esto sobre todo cuando a los elementos se les da un valor de position. </p>
+<hr>
+            <h3>Un solo elemento con position</h3>
+                <p>Si no hay un z-index declarado los elementos se sobreponen <strong>según el orden</strong> en que se declaran <strong>en el html,</strong> de arriba hacia abajo</p>
+                    <p class="caja-index index-uno">Caja 1</p>
+                    <p class="caja-index index-dos">Caja 2</p>
+                <p>En este caso la caja 1 tiene posición relativa y un desplazamiento de 45px y al estar la caja 1 en el <strong>html declarada primero que la caja 2</strong>
+                    se coloque por encima de la caja 2.</p>
+<hr>
+            <h3>Ambos elementos con position</h3>
+                <p>Si a ambas cajas se les declara una posición, en este caso ambas cajas tienen <strong>position: relative;</strong>
+                    así solo la primera tenga desplazamiento depende del <strong>orden de declaración en html,</strong> pero de abajo hacia arriba.</p>
+                    <p class="caja-index index-tres">Caja 1</p>
+                    <p class="caja-index index-cuatro">Caja 2</p>
+                <p>Y como en el html la caja 2 está después de la caja 1, se coloca encima</p>
+<hr>
+
+            </section>
 
 
     </main>
